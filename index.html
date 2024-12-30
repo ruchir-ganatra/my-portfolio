@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000428, #004e92);
+            color: #e0f7fa;
+        }
+
+        header {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        #contact {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #004e92;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #e0f7fa;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        nav a:hover {
+            background: #00c6ff;
+            padding: 0.5rem;
+            border-radius: 5px;
+            color: #004e92;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            color: #e0f7fa;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 3px solid #00c6ff;
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .project {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #00c6ff;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .project h3 {
+            color: #00c6ff;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.4rem 0.8rem;
+            color: #004e92;
+            background: #00c6ff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .project a:hover {
+            background: #0072ff;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul li:before {
+            content: '\2713';
+            color: #00c6ff;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #004e92;
+            color: #e0f7fa;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            border-top: 3px solid #00c6ff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .profile-pic {
+            display: block;
+            max-width: 100px;
+            border-radius: 0;
+            margin: 1rem auto;
+            border: 3px solid #00c6ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            float: right; /* Move the image to the right */
+            margin-left: 1rem; /* Add spacing between image and text */
+        }
+
+        #about p {
+            overflow: hidden; /* Ensure content wraps nicely around the floated image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>my Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="WhatsApp Image 2024-12-21 at 09.57.07_0a15a23f.jpg" alt="Your Photo" class="profile-pic">
+            <p>Hi, I am a 4th-semester student at Silver Oak University. I am passionate about cybersecurity and enjoy creating web applications and solving challenging problems.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>1. OWASP Top 10 Scanner</h3>
+                <p>An automated scanner for identifying OWASP Top 10 vulnerabilities in web applications.</p>
+                <a href="https://github.com/yourusername/OWASP-Top-10-Scanner" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>2. My Cryptography Project</h3>
+                <p>A project focused on implementing cryptographic algorithms and understanding their applications.</p>
+                <a href="https://github.com/yourusername/my_cryptography_project" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>3. First Web</h3>
+                <p>A simple webpage showcasing basic HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/yourusername/firstweb" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>4. Rock-Paper-Scissors</h3>
+                <p>A fun web-based Rock-Paper-Scissors game implemented in JavaScript.</p>
+                <a href="https://github.com/yourusername/Rock-Paper-Scissors" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web development using HTML, CSS, and JavaScript</li>
+                <li>Understanding of cybersecurity principles</li>
+                <li>Knowledge of cryptographic algorithms</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me on <a href="mailto:your.email@example.com">2302021000098@silveroakuniac.in</a>.</p>
+        
+        </section>
+
+        
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 ruchir ganatra </p>
+    </footer>
+</body>
+</html>
