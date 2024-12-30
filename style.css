@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #4CAF50;
+}
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.project {
+    margin-bottom: 2rem;
+}
+footer {
+    text-align: right;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
